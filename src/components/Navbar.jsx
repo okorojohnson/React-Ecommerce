@@ -11,14 +11,14 @@ const Navbar = () => {
       } text-white z-50 py-6 gap-4 h-[170px]`}
     >
       <div className="flex w-full flex-cols justify-between items-center gap-32">
-        <div className="hidden l:gflex-shrink-0">
+        <div className="hidden lg:flex lg:flex-shrink-0">
           <input
             type="text"
             placeholder="Search"
             className="w-48 px-3 py-2 border border-gray-500 rounded-full bg-transparent text-white placeholder:text-gray-300"
           />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <img src="/Vector.png" alt="SimpleWood." className="h-8" />
           <span className="text-xl font-bold">SimpleWood</span>
         </div>

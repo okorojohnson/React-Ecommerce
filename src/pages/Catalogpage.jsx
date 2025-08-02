@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 const Catalogpage = () => {
   return (
     <div className="">
-      <Navbar />
       <Hero2 />
       <Shoppingoption />
     </div>

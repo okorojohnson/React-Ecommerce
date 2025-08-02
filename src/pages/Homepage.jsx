@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 const Homepage = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Productdisplay />
       <CTA />
