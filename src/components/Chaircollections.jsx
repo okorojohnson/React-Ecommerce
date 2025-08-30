@@ -1,167 +1,3 @@
-{
-  /*import React, { useContext } from "react";
-import { DataContext } from "../context/DataContext";
-
-export default function ChaircollectionsWithSlider() {
-  const { images, currentIndex, goNext, goPrev } = useContext(DataContext);
-
-  return (
-    <section className="mt-40 w-full">
-      
-      <div className="flex gap-2 pt-16 px-16 cursor-pointer">
-        <small className="font-bold text-black">Home</small>
-        <img src="/Vector v.png" alt="arrow icon" />
-        <small className="text-black">New Luma Yoga Collection</small>
-      </div>
-
-      <div className="text-center mt-8">
-        <div className="flex justify-center items-center h-64">
-          <img
-            src={images[currentIndex]}
-            alt={`Image ${currentIndex + 1}`}
-            className="rounded shadow-lg w-full max-w-md object-cover"
-          />
-        </div>
-
-        <div className="flex justify-center space-x-6 mt-4">
-          <button
-            onClick={goPrev}
-            className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-          >
-            ← Prev
-          </button>
-          <button
-            onClick={goNext}
-            className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-          >
-            Next →
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-
-import React, { useContext } from "react";
-import { DataContext } from "../context/DataContext";
-
-export default function ChaircollectionsWithSlider() {
-  const { images, currentIndex, goNext, goPrev } = useContext(DataContext);
-
-  return (
-    <section className="mt-40 w-full">
-    
-      <div>
-        <div className="flex gap-2 pt-16 px-16 cursor-pointer">
-          <small className="font-bold text-black">Home</small>
-          <img src="/Vector v.png" alt="arrow icon" />
-          <small className="text-black">New Luma Yoga Collection</small>
-        </div>
-      </div>
-      
-      <div className="text-center mt-8">
-        <div className="flex justify-center items-center h-64">
-          <img
-            src={images[currentIndex]}
-            alt={`Image ${currentIndex + 1}`}
-            className="rounded shadow-lg w-full max-w-md object-cover"
-          />
-        </div>
-
-    
-        <div className="flex justify-center items-center h-20 mt-4 space-x-6">
-          <button
-            onClick={goPrev}
-            className="px-4 py-2 bg-gray-300 rounded-full hover:bg-gray-400 text-xl"
-            aria-label="Previous"
-          >
-            ←
-          </button>
-          <button
-            onClick={goNext}
-            className="px-4 py-2 bg-gray-300 rounded-full hover:bg-gray-400 text-xl"
-            aria-label="Next"
-          >
-            →
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-}
-*/
-}
-{
-  /*}
-import React, { useContext, useEffect } from "react";
-import { DataContext } from "../context/DataContext";
-
-export default function ChaircollectionsWithSlider() {
-  const { images, currentIndex, setCurrentIndex } = useContext(DataContext);
-
-  // ⏱️ Auto-slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); // Change image every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [images.length, setCurrentIndex]);
-
-  return (
-    <section className="mt-40 w-full">
-    
-      <div className="flex gap-2 pt-16 px-16 cursor-pointer">
-        <small className="font-bold text-black">Home</small>
-        <img src="/Vector v.png" alt="arrow icon" />
-        <small className="text-black">New Luma Yoga Collection</small>
-      </div>
-
-      
-      <div className="text-center mt-8">
-        <div className="flex justify-center items-center h-64">
-          <img
-            src={images[currentIndex]}
-            alt={`Image ${currentIndex + 1}`}
-            className="rounded shadow-lg w-full max-w-md object-cover"
-          />
-        </div>
-
-        
-        <div className="flex justify-center items-center h-20 mt-4 space-x-6">
-          <button
-            onClick={() =>
-              setCurrentIndex(
-                currentIndex === 0 ? images.length - 1 : currentIndex - 1
-              )
-            }
-            className="px-4 py-2 bg-gray-300 rounded-full hover:bg-gray-400 text-xl"
-            aria-label="Previous"
-          >
-            ←
-          </button>
-          <button
-            onClick={() =>
-              setCurrentIndex(
-                currentIndex === images.length - 1 ? 0 : currentIndex + 1
-              )
-            }
-            className="px-4 py-2 bg-gray-300 rounded-full hover:bg-gray-400 text-xl"
-            aria-label="Next"
-          >
-            →
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-}
-*/
-}
-
 import React, { useContext, useEffect } from "react";
 import { DataContext } from "../context/DataContext";
 import Button from "./mini-components/Button";
@@ -169,7 +5,7 @@ import Button from "./mini-components/Button";
 export default function ChaircollectionsWithSlider() {
   const { images, currentIndex, setCurrentIndex } = useContext(DataContext);
 
-  // ⏱️ Auto-slide every 3 seconds
+  //  Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -181,7 +17,7 @@ export default function ChaircollectionsWithSlider() {
 
   return (
     <section className="mt-40 w-full">
-      {/* 🧭 Breadcrumb */}
+      {/*  Breadcrumb */}
       <div>
         <div className="flex gap-2 pt-16 px-20 mx-36 cursor-pointer">
           <small className="font-bold text-black">Home</small>
@@ -190,7 +26,7 @@ export default function ChaircollectionsWithSlider() {
         </div>
       </div>
 
-      {/* 📸 Image Slider */}
+      {/* Image Slider */}
       <div className="grid grid-cols-2 gap-32">
         <div className="px-20 mx-36">
           <div className="relative flex justify-center items-center w-[500px] h-[500px] mt-8 bg-s_cards">
@@ -200,7 +36,7 @@ export default function ChaircollectionsWithSlider() {
               className=" w-[438px] h-[400px] max-w-md object-cover"
             />
 
-            {/* ⬅️ Left Arrow */}
+            {/*  Left Arrow */}
             <button
               onClick={() =>
                 setCurrentIndex(
@@ -213,7 +49,7 @@ export default function ChaircollectionsWithSlider() {
               ←
             </button>
 
-            {/* ➡️ Right Arrow */}
+            {/* Right Arrow */}
             <button
               onClick={() =>
                 setCurrentIndex(
@@ -290,7 +126,7 @@ export default function ChaircollectionsWithSlider() {
               <img src="/email.png" alt="EMAIL" />
               <small>EMAIL</small>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

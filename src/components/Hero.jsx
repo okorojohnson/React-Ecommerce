@@ -12,7 +12,7 @@ const Hero = () => {
           <FaFacebook />
           <FaTwitter />
           <FaYoutube />
-          <FaGoogle />
+          <FaGoogle /> 
         </div>
 
         <div className="text-white max-w-lg">

@@ -66,7 +66,7 @@ export default function ChaircollectionsWithSlider() {
           <div className="flex gap-2 mt-2">
             <img src="/Greychair.png" alt="" className="w-[54px] h-[85px]" />
             <img src="/image16.png" alt="" className="w-[54px] h-[85px]" />
-            <img src="/image17.png" alt="" className="w-[54px] h-[85px]" />
+            <img src="/image17.png" alt=""  className="w-[54px] h-[85px]" />
           </div>
         </div>
         {/* right side*/}
