@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import Catalogpage from "../pages/Catalogpage";
 const Navbar = () => {
   const location = useLocation();
   const isHomepage = location.pathname === "/";
@@ -48,7 +49,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/pages" className="hover:text-green-400">
+            <Link to="/Catalogpage" className="hover:text-green-400">
               Pages
             </Link>
           </li>
